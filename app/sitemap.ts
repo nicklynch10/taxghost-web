@@ -35,8 +35,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date(tool.date),
   }));
 
+  const hardcodedTools = [
+    { url: "/tools/wash-sale-checker/", priority: 0.9, changeFrequency: "monthly" as const },
+  ];
+
   return [
     ...staticPages.map((page) => ({
+      url: `${BASE_URL}${page.url}`,
+      lastModified: new Date(),
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+    })),
+    ...hardcodedTools.map((page) => ({
       url: `${BASE_URL}${page.url}`,
       lastModified: new Date(),
       changeFrequency: page.changeFrequency,

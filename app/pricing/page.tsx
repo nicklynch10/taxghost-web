@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pricing — Free Tax Tools for DIY Investors",
+  description:
+    "TaxGhost is free while in beta. Use our wash sale checker, tax-loss harvesting calculator, and cost basis reconstructor at no cost.",
+};
+
 export default function PricingPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">

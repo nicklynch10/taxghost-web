@@ -6,7 +6,7 @@ export function buildMetadata(item: {
   keywords: string[];
 }): Metadata {
   return {
-    title: `${item.title} | TaxGhost`,
+    title: item.title,
     description: item.description,
     keywords: item.keywords,
     openGraph: {

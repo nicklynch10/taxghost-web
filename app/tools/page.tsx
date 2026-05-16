@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Free Tools — Wash Sale Checker & Tax Calculators",
+  description:
+    "Free interactive tax tools for DIY investors. Check wash sale rules, calculate tax-loss harvesting savings, and optimize your portfolio taxes.",
+};
 
 export default function ToolsIndex() {
   return (
@@ -10,7 +17,7 @@ export default function ToolsIndex() {
 
       <div className="grid md:grid-cols-2 gap-6">
         <Link
-          href="/tools/wash-sale-checker"
+          href="/tools/wash-sale-checker/"
           className="border border-zinc-200 rounded-lg p-6 hover:border-zinc-400 transition-colors"
         >
           <h2 className="font-semibold mb-2">Wash Sale Checker</h2>

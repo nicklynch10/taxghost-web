@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllContent } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Guides — Tax-Loss Harvesting & Tax Optimization",
+  description:
+    "In-depth guides on tax-loss harvesting, wash sale rules, cost basis tracking, and portfolio tax optimization for DIY investors.",
+};
 
 export default function GuidesIndex() {
   const guides = getAllContent("guides");
@@ -14,7 +21,7 @@ export default function GuidesIndex() {
           {guides.map((guide) => (
             <article key={guide.slug} className="border-b border-zinc-100 pb-8">
               <Link
-                href={`/guides/${guide.slug}`}
+                href={`/guides/${guide.slug}/`}
                 className="text-xl font-semibold hover:text-zinc-600"
               >
                 {guide.title}

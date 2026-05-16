@@ -64,16 +64,16 @@ export default function RootLayout({
               TaxGhost
             </a>
             <nav className="flex gap-6 text-sm">
-              <a href="/blog" className="hover:text-zinc-600">
+              <a href="/blog/" className="hover:text-zinc-600">
                 Blog
               </a>
-              <a href="/guides" className="hover:text-zinc-600">
+              <a href="/guides/" className="hover:text-zinc-600">
                 Guides
               </a>
-              <a href="/tools" className="hover:text-zinc-600">
+              <a href="/tools/" className="hover:text-zinc-600">
                 Tools
               </a>
-              <a href="/pricing" className="hover:text-zinc-600">
+              <a href="/pricing/" className="hover:text-zinc-600">
                 Pricing
               </a>
             </nav>

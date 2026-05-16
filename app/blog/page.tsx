@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllContent } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Blog — Tax Tips & Strategies for DIY Investors",
+  description:
+    "Tax optimization strategies, loss harvesting techniques, and practical guides for managing your investment taxes without a robo-advisor.",
+};
 
 export default function BlogIndex() {
   const posts = getAllContent("blog");
@@ -14,7 +21,7 @@ export default function BlogIndex() {
           {posts.map((post) => (
             <article key={post.slug} className="border-b border-zinc-100 pb-8">
               <Link
-                href={`/blog/${post.slug}`}
+                href={`/blog/${post.slug}/`}
                 className="text-xl font-semibold hover:text-zinc-600"
               >
                 {post.title}
