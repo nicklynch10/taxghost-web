@@ -1,0 +1,175 @@
+---
+title: "1099-DA Cost Basis Missing: What to Do Now"
+description: "Brokers sent 1099-DA forms with $0 cost basis. Here's how to calculate your actual crypto cost basis, fix your tax return, and avoid a CP2000 notice from the IRS."
+date: "2026-05-16"
+keywords: ["1099-DA", "crypto taxes", "cost basis", "CP2000", "IRS crypto", "Form 8949"]
+---
+
+> **Disclaimer:** This article is for educational purposes only. It is not personalized tax advice, and it is not a substitute for advice from a qualified tax professional or CPA. Tax laws change, and your situation is unique. Consult a professional before making tax decisions.
+
+---
+
+## The 1099-DA Problem in Plain English
+
+If you sold cryptocurrency in 2025, your broker sent you a new tax form called Form 1099-DA. This form is the IRS's way of tracking crypto sales, similar to how Form 1099-B tracks stock sales. But there is a critical difference: many 1099-DA forms show **$0 cost basis** in Box 1e, even though you almost certainly did not acquire your crypto for free.
+
+Here is why this matters. The IRS receives a copy of your 1099-DA. If the form shows $10,000 in proceeds and $0 in cost basis, the IRS computer sees a $10,000 taxable gain. If your tax return shows a smaller gain — or a loss — because you reported your actual cost basis, the IRS automated matching system flags a discrepancy. That discrepancy generates a **CP2000 notice**, proposing additional tax, interest, and penalties.
+
+Millions of crypto investors are expected to receive CP2000 notices in 2026 because of this exact mismatch. The problem is so widespread that tax professionals are calling it the biggest crypto tax issue since the IRS first asked about digital assets on Form 1040.
+
+The good news: this is fixable. You just need to know how to calculate your actual cost basis, report it correctly, and respond if the IRS comes knocking.
+
+---
+
+## Why Your 1099-DA Shows $0 Cost Basis
+
+The $0 basis is not a software bug, and it is not necessarily your broker's fault. It is a consequence of how the IRS phased in the 1099-DA reporting requirements:
+
+1. **Transitional rules for 2025.** Brokers were required to report proceeds starting with 2025 sales, but cost basis reporting was delayed. For assets acquired before the broker's tracking obligation began, the broker has no basis to report and defaults to $0.
+
+2. **Transfers between platforms.** If you bought Bitcoin on Coinbase in 2021, moved it to a hardware wallet, then transferred it to Kraken and sold it in 2025, Kraken has no record of your original purchase price. The 1099-DA from Kraken will show $0 basis.
+
+3. **Gifts, airdrops, and mining.** Special basis rules apply to these acquisition methods. Some brokers have not fully implemented them and default to $0 rather than risk reporting an incorrect number.
+
+4. **Software limitations.** The 1099-DA is a brand-new form. Some brokers are still building out their reporting systems and may not have complete historical data.
+
+The critical thing to understand: **$0 on your 1099-DA does not mean your basis is actually $0.** It means the broker did not report it. You are still legally required to report your actual basis on your tax return.
+
+---
+
+## Step-by-Step: How to Find Your Actual Cost Basis
+
+Your cost basis is generally the amount you paid to acquire the asset, including transaction fees. Here is how to reconstruct it:
+
+### 1. Start with Exchange Trade History
+
+Log into every exchange where you have ever bought, sold, or traded crypto. Download your complete transaction history as a CSV file. Look for:
+
+- **Buy orders:** The price you paid per unit, the number of units, and any trading fees.
+- **Convert trades:** Exchanging one crypto for another (e.g., BTC to ETH) is a taxable sale. Your basis in the new asset is the fair market value of the old asset at the time of the trade.
+- **Stablecoin purchases:** Buying USDC or USDT with fiat is not taxable, but selling stablecoins back to fiat is. Track your stablecoin basis just like any other crypto.
+
+### 2. Add Transaction Fees
+
+Transaction fees increase your cost basis. Include:
+
+- **Exchange trading fees:** Usually a percentage of the trade, shown on your trade confirmation.
+- **Network fees (gas):** Fees paid to miners or validators for on-chain transactions. If you paid gas to move crypto to an exchange before selling, that fee is part of your basis.
+- **Deposit and withdrawal fees:** Some exchanges charge fees to move fiat or crypto in and out.
+
+### 3. Handle Gifts and Inheritances
+
+- **Gifts:** Your basis is generally the same as the donor's basis (carryover basis). If the donor's basis is unknown, you may need to use the fair market value on the date of the gift, depending on whether there was a gain or loss at the time.
+- **Inheritances:** Your basis is the fair market value on the date of death (stepped-up basis). Use a reliable price index for the date of death.
+
+### 4. Account for Mining and Staking
+
+Mined or staked crypto is treated as ordinary income at fair market value on the date received. That fair market value becomes your basis for future sales. Use a price index like CoinMarketCap or CoinGecko to determine the value on the date of receipt.
+
+### 5. Use Blockchain Explorers for On-Chain Transactions
+
+If you made transactions directly on-chain (not through an exchange), use a blockchain explorer to find the date and value. For Ethereum, Etherscan shows the USD value of transactions at the time they occurred. For Bitcoin, Blockchain.com and Blockchair provide similar data.
+
+### 6. Reconstruct Missing Records
+
+If you do not have complete records, reconstruct them from:
+
+- Bank statements showing wire transfers or ACH deposits to exchanges
+- Credit card statements for crypto purchases
+- Email confirmations from exchanges
+- Tax returns from prior years showing crypto income
+
+The IRS accepts reasonable estimates supported by the best available evidence. Document your methodology and keep everything. If you are missing records for a significant portion of your holdings, consider hiring a crypto tax specialist.
+
+---
+
+## How to Fill Out Form 8949 When Basis Does Not Match 1099-DA
+
+When your 1099-DA shows $0 or incorrect basis, you must use Form 8949 to report the sale with the correct numbers. Here is the step-by-step:
+
+### Step 1: List the Transaction
+
+On Form 8949, enter:
+
+- **Column (a):** Description of property (e.g., "2.5 BTC")
+- **Column (b):** Date acquired
+- **Column (c):** Date sold or disposed
+- **Column (d):** Proceeds (sales price) — use the amount from 1099-DA Box 1d
+- **Column (e):** Cost or other basis — use your **actual** basis, not the $0 from the 1099-DA
+
+### Step 2: Calculate the Adjustment
+
+In **Column (g)**, enter the difference between your actual basis and the basis the IRS has on file (which is $0 or the incorrect reported basis). For example:
+
+- If proceeds are $10,000 and your actual basis is $8,000, your correct gain is $2,000.
+- The 1099-DA shows $0 basis, so the IRS thinks your gain is $10,000.
+- Enter **$8,000** in Column (g) to reduce the gain to the correct $2,000.
+
+### Step 3: Enter the Adjustment Code
+
+In **Column (f)**, enter the code that explains the adjustment:
+
+- **Code B:** Use this if the broker did not report basis to the IRS. This is the most common case for 2025 1099-DA forms with $0 basis.
+- **Code T:** Use this if the broker reported an incorrect basis (not $0, but wrong).
+
+### Step 4: Transfer to Schedule D
+
+The totals from Form 8949 flow to Schedule D, which calculates your net capital gain or loss. Short-term transactions (held one year or less) go on Part I. Long-term transactions (held more than one year) go on Part II.
+
+### Using Tax Software
+
+Most tax software can handle this, but you may need to manually adjust each transaction:
+
+- **TurboTax:** Import your 1099-DA, then edit each transaction to enter the correct basis and adjustment code.
+- **H&R Block:** Similar process — import, then adjust.
+- **FreeTaxUSA:** Manually enter each transaction with the correct basis.
+- **Crypto-specific software:** CoinTracker, Koinly, and TaxBit can calculate basis and generate Form 8949, but verify their numbers against your own records.
+
+---
+
+## What to Do If You Already Filed with $0 Basis
+
+If you already filed your tax return using the $0 basis from your 1099-DA, you likely overpaid your taxes. Here is how to fix it:
+
+### File an Amended Return (Form 1040-X)
+
+You have three years from the original filing deadline to amend your return and claim a refund. For 2025 returns filed in April 2026, the deadline to amend is April 2029.
+
+1. **Prepare a corrected Form 8949** with your actual basis and the appropriate adjustment code.
+2. **Prepare a corrected Schedule D** showing the reduced gain or increased loss.
+3. **File Form 1040-X** with the IRS, attaching the corrected forms and an explanation.
+4. **Include documentation** of your actual basis (exchange statements, trade confirmations, etc.).
+
+### If You Receive a CP2000 Notice
+
+If the IRS sends you a CP2000 before you amend, respond to the notice rather than filing an amended return:
+
+1. **Do not ignore it.** The notice has a deadline, usually 30 days.
+2. **Gather your documentation.** Collect all records showing your actual cost basis.
+3. **Complete the response form.** Check the box indicating you disagree with all or part of the proposed changes.
+4. **Write a clear explanation.** State that the 1099-DA reported $0 basis, but your actual basis was $X, and attach your evidence.
+5. **Mail everything to the address on the notice.** Keep copies of everything you send.
+
+The IRS typically takes 8-12 weeks to process a CP2000 response. If they agree, they will close the case. If they disagree, they may issue a statutory notice of deficiency, which gives you the right to petition Tax Court.
+
+---
+
+## Use Our Free 1099-DA Cost Basis Fixer Tool
+
+We built a free interactive tool to help you calculate the correct gain or loss and get the right Form 8949 adjustment code. Just enter your proceeds, reported basis, and actual basis — the tool does the math and gives you a copyable summary for your tax prep.
+
+**[Try the 1099-DA Cost Basis Fixer →](/tools/1099-da-basis-fixer)**
+
+---
+
+## Also Check Your Wash Sales
+
+If you sold crypto at a loss and repurchased the same or a similar asset within 30 days, the wash sale rule may apply. While cryptocurrency is currently treated as property (not a security) and the wash sale rule does not technically apply, Congress has considered closing this loophole. It is worth checking your transactions just in case.
+
+**[Check Your Wash Sales →](/tools/wash-sale-checker)**
+
+---
+
+## Bottom Line
+
+The 1099-DA cost basis problem is the biggest crypto tax issue of 2026. Millions of investors received forms with $0 basis, and millions will receive CP2000 notices if they do not correct their returns. The fix is straightforward: calculate your actual cost basis, file Form 8949 with the correct adjustment code, and keep records. If you already filed with $0 basis, amend your return or respond to any CP2000 notice promptly. The IRS gives you the tools to fix this — you just need to use them.

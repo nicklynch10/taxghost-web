@@ -46,7 +46,7 @@ export default function WashSaleCheckerPage() {
       </div>
 
       <AuthorCard
-        name="Nick Lynch"
+        name="Nick Milton"
         role="Founder, TaxGhost"
         bio="Built TaxGhost after getting burned by Fidelity's cost basis during a broker transfer. Not a CPA, but reads a lot of IRS publications."
       />
@@ -180,7 +180,7 @@ export default function WashSaleCheckerPage() {
 
       <div className="mt-12">
         <AuthorCard
-          name="Nick Lynch"
+          name="Nick Milton"
           role="Founder, TaxGhost"
           bio="Built TaxGhost after getting burned by Fidelity's cost basis during a broker transfer. Not a CPA, but reads a lot of IRS publications."
         />

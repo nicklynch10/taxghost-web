@@ -17,6 +17,16 @@ export default function ToolsIndex() {
 
       <div className="grid md:grid-cols-2 gap-6">
         <Link
+          href="/tools/1099-da-basis-fixer/"
+          className="border border-zinc-200 rounded-lg p-6 hover:border-zinc-400 transition-colors"
+        >
+          <h2 className="font-semibold mb-2">1099-DA Cost Basis Fixer</h2>
+          <p className="text-sm text-zinc-600">
+            Fix missing or incorrect cost basis on Form 1099-DA. Calculate the
+            correct crypto gain/loss and get the right Form 8949 adjustment code.
+          </p>
+        </Link>
+        <Link
           href="/tools/wash-sale-checker/"
           className="border border-zinc-200 rounded-lg p-6 hover:border-zinc-400 transition-colors"
         >
